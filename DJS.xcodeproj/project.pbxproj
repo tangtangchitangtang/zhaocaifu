@@ -194,6 +194,7 @@
 		9902BCD71FF5E367002E175B /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9902BCD21FF5E367002E175B /* SSKeychain.m */; };
 		9902BCD81FF5E367002E175B /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9902BCD51FF5E367002E175B /* SSKeychainQuery.m */; };
 		9902BCDC1FF5E379002E175B /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9902BCDA1FF5E379002E175B /* NSString+Hash.m */; };
+		9904583C1FFF656500F878C7 /* LOVeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9904583B1FFF656500F878C7 /* LOVeViewController.m */; };
 		999181C71FF61E6800D072AA /* myView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D56651FF332C30015D371 /* myView.m */; };
 		999181CE1FF638B100D072AA /* detailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999181CD1FF638B100D072AA /* detailsViewController.m */; };
 		999181D11FF638BF00D072AA /* detailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 999181D01FF638BF00D072AA /* detailsView.m */; };
@@ -586,6 +587,8 @@
 		9902BCD51FF5E367002E175B /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
 		9902BCDA1FF5E379002E175B /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		9902BCDB1FF5E379002E175B /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		9904583A1FFF656500F878C7 /* LOVeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LOVeViewController.h; sourceTree = "<group>"; };
+		9904583B1FFF656500F878C7 /* LOVeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOVeViewController.m; sourceTree = "<group>"; };
 		999181CC1FF638B100D072AA /* detailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detailsViewController.h; sourceTree = "<group>"; };
 		999181CD1FF638B100D072AA /* detailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = detailsViewController.m; sourceTree = "<group>"; };
 		999181CF1FF638BF00D072AA /* detailsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detailsView.h; sourceTree = "<group>"; };
@@ -730,6 +733,8 @@
 		040D56611FF332A10015D371 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				9904583A1FFF656500F878C7 /* LOVeViewController.h */,
+				9904583B1FFF656500F878C7 /* LOVeViewController.m */,
 				999181F81FFDF56000D072AA /* 修改登录 */,
 				999181ED1FFDD6BB00D072AA /* 安全设置 */,
 				999181EC1FFDD6AD00D072AA /* 我的 */,
@@ -1936,6 +1941,7 @@
 				047899F61FF0A22F00C03F5E /* MWCaptionView.m in Sources */,
 				047893191FF09FFD00C03F5E /* View+MASAdditions.m in Sources */,
 				047899531FF0A1E200C03F5E /* MJRefreshHeader.m in Sources */,
+				9904583C1FFF656500F878C7 /* LOVeViewController.m in Sources */,
 				999181EB1FFDC85000D072AA /* UIScrollView+UITouch.m in Sources */,
 				047899771FF0A20400C03F5E /* MJExtensionConst.m in Sources */,
 				047899761FF0A20400C03F5E /* MJFoundation.m in Sources */,
