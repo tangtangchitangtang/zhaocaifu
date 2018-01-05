@@ -1,0 +1,104 @@
+//
+//  PrefixHeader.pch
+//  DJS
+//
+//  Created by mac on 2017/12/25.
+//  Copyright © 2017年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+//项目类
+#import "LoginViewController.h"
+//#import "alertView.h"
+//基类
+#import "BaseView.h"
+#import "BaseModel.h"
+#import "BaseViewController.h"
+#import "BaseTabBarController.h"
+#import "BaseTableViewController.h"
+#import "BaseTableViewCell.h"
+#import "BaseCollectionViewCell.h"
+#import "BaseCollectionViewController.h"
+#import "BaseTableView.h"
+#import "BaseImage.h"
+#import "BaseLable.h"
+#import "BaseAlertController.h"
+#import "ZQTools.h"
+#import "BaseCollectionView.h"
+#import "AppDelegate.h"
+#import "BaseButton.h"
+#pragma mark——————————————通用模型
+//#import "userModel.h"     //用户模型、
+//第三方
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "Toast.h"
+#import "BaseModel.h"
+#import "WRNavigationBar.h"             //navbar隐藏
+#import "ZQTools.h"
+#import "FTIndicator.h"//弹框饮用
+//占位图
+#define _zhanweiImageData     [UIImage imageNamed:@"zhanwei"]
+
+//接口根地址
+#define _addressUrl @"http://172.16.60.9:8080"
+#define _imageUrl @"http://172.16.60.9:8080/uploadFiles/uploadImgs"
+
+
+#define app_key @"F5B2D79A33F37AA998EBA284BF7B9456"
+
+//屏幕宽高
+#define _mainW [UIScreen mainScreen].bounds.size.width
+#define _mainH [UIScreen mainScreen].bounds.size.height
+
+#define _mainWidth [UIScreen mainScreen].bounds.size.width/375
+#define _mainHeight [UIScreen mainScreen].bounds.size.height/667
+
+
+
+//主题颜色
+#define _backgroundColor  ColorWithRGB(184, 141, 63)
+//#define _backgroundColor [UIColor whiteColor]
+
+
+//天蓝色
+#define _tianLanColor  ColorWithRGB(52.0 , 184.0, 245.0)
+
+
+
+
+//主题颜色
+#define _xianLabelColor  ColorWithRGB(230.0 , 230.0, 230.0)
+
+//浅灰色
+#define _LightGrey [UIColor colorWithRed:235.0/255.0 green:235.0/255.0 blue:235.0/255.0 alpha:1]
+
+//深灰色
+#define _DarkGrey [UIColor colorWithRed:217.0/255.0 green:217.0/255.0 blue:217.0/255.0 alpha:1]
+
+
+//用户数据模型存的目录
+#define _userModelFile  [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex: 0]  stringByAppendingPathComponent:@"userDataModel.data"]
+
+
+
+#define _ziTiColor  ColorWithRGB(97.0, 97.0, 97.0)
+
+//rgb颜色快捷
+#define ColorWithRGB(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0]
+
+//快捷进入登陆
+#define _loginWithVc(A) LoginViewController *login=[[LoginViewController alloc] init]; [ZQTools pushNextViewController:A andRootController:login];
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

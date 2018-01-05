@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LoginViewController.h"
+#import "homeViewController.h"
+#import "orderViewController.h"
+#import "myViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +19,33 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+//    LoginViewController *yindao=[[LoginViewController alloc] init];
+//    UINavigationController *nav1= [[UINavigationController alloc] initWithRootViewController:yindao];
+//    self.window.rootViewController=nav1;
+    
+    homeViewController *Shouye=[[homeViewController alloc] init];
+    orderViewController *Task=[[orderViewController alloc] init];
+    myViewController *Release=[[myViewController alloc] init];
+
+
+
+    UINavigationController *nav1= [[UINavigationController alloc] initWithRootViewController:Shouye];
+    UINavigationController *nav2= [[UINavigationController alloc] initWithRootViewController:Task];
+    UINavigationController *nav3= [[UINavigationController alloc] initWithRootViewController:Release];
+
+
+    nav1.tabBarItem.title=@"首页";
+    nav2.tabBarItem.title=@"订单";
+    nav3.tabBarItem.title=@"我的";
+
+    UITabBarController *bar=[[UITabBarController alloc] init];
+    bar.viewControllers=@[nav1,nav2,nav3];
+
+    self.window.rootViewController=bar;
+    [self.window makeKeyAndVisible];
+
+    
     return YES;
 }
 
